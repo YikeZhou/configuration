@@ -23,3 +23,8 @@ nnoremap <Leader>jw <C-W>j
 nmap <Leader>M %
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
+set incsearch
+set ignorecase
+set nocompatible
+set wildmenu
