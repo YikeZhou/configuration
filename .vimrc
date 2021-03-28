@@ -53,3 +53,49 @@ Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
+
+" color theme
+set background=dark
+" colorscheme solarized
+colorscheme molokai
+" colorscheme phd
+
+set gcr=a:block-blinkon0
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
+
+set guioptions-=m
+set guioptions-=T
+
+set laststatus=2
+set ruler
+set number
+set cursorline
+set cursorcolumn
+set colorcolumn=120
+set hlsearch
+
+set nowrap
+let g:Powerline_colorscheme='solarized256'
+
+syntax enable
+syntax on
+
+filetype indent on
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+:nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
+" set foldmethod=indent
+set foldmethod=syntax
+set nofoldenable
+
+
