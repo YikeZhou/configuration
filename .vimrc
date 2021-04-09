@@ -28,6 +28,8 @@ set incsearch
 set ignorecase
 set nocompatible
 set wildmenu
+set noswapfile
+set foldenable
 
 " Vundle settings
 "
@@ -53,6 +55,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'preservim/nerdtree'
+Plugin 'dyng/ctrlsf.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -115,3 +118,20 @@ autocmd VimEnter * NERDTree | wincmd p
 " Exit Vim if NERDTree is the only window left
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
   \ quit | endif
+
+" Open the existing NERDTree on each new tab
+autocmd BufWinEnter * silent NERDTreeMirror
+
+" If another buffer tries to replace NERDTree, put it in the other window, and
+" bring back NERDTree.
+" autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('&') > 1 |
+"   \ let buf=bufnr() | buffer# | execute "normal! \<C-w>w" | execute 'buffer'.buf | endif
+
+" CtrlSF config
+nnoremap <Leader>sn :CtrlSF<CR>
+nnoremap <Leader>sw :CtrlSF -S -W<CR>
+
+let g:ctrlsf_auto_focus = {
+  \ "at": "done",
+  \ "duration_less_than": 1000
+  \ }
