@@ -14,7 +14,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>WQ :wa<CR>:q<CR>
 nmap <Leader>Q :qa!<CR>
 
-nnoremap nw <C-W><C-W>
+" nnoremap nw <C-W><C-W>
 nnoremap <Leader>lw <C-W>l
 nnoremap <Leader>hw <C-W>h
 nnoremap <Leader>kw <C-W>k
