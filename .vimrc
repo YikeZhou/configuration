@@ -56,6 +56,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'preservim/nerdtree'
 Plugin 'dyng/ctrlsf.vim'
+Plugin 'ycm-core/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
