@@ -6,6 +6,7 @@ filetype plugin on
 nmap LB 0
 nmap LE $
 
+" copy to system clipboard
 vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 
@@ -20,6 +21,7 @@ nnoremap <Leader>hw <C-W>h
 nnoremap <Leader>kw <C-W>k
 nnoremap <Leader>jw <C-W>j
 
+" jump to matched paren
 nmap <Leader>M %
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
