@@ -6,7 +6,14 @@
 *~
 .#*
 .vscode
+.cache
+.metals
+.scala-build
+.bloop
 
 # OS files
 Thumbs.db
 .DS_Store
+
+# Python virtural environments
+venv/
