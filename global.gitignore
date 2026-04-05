@@ -10,6 +10,7 @@
 .metals
 .scala-build
 .bloop
+.codex
 
 # OS files
 Thumbs.db
